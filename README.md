@@ -1,5 +1,4 @@
 # Data_Science_Challenge
-# Data-Science-Challenge
 
 ## Question 1:
 

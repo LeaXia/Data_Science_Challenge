@@ -10,22 +10,6 @@
 2. What metric would you report for this dataset?
 3. What is its value?
 
-## Answers: 
-
-1. The incorrect AOV calculation of $3145.13 was most likely arrived at by mistakenly calculating the total_items with the count() function instead of sum(). Whereas count() will only provide the total count of the number of rows, sum() will more accurately provide the AOV value by adding together all of the values in the total_items column. 
-
-2. To determine the correct Average Order Value (AOV), the reporting metrics are the respective sums of both 'order_amount' and 'total_items':<br/>
-
-   oa_sum = data_df['order_amount'].sum()\
-   ti_sum = data_df['total_items'].sum()
-
-   Next divide the total order amount (oa_sum) by the total items amount (ti_sum):\
-   AOV = oa_sum/ti_sum
-
-3. The Average Order Value (AOV) is: $357.92 
-
-VIEW CODE HERE: https://github.com/elsantonato/Data-Science-Challenge_Question-1/blob/master/Data-Science-Intern-Challenge-Question-1.ipynb
-
 ## Question 2: 
 
 For this question you’ll need to use SQL. Follow this link (https://www.w3schools.com/SQL/TRYSQL.ASP?FILENAME=TRYSQL_SELECT_ALL) to access the data set required for the challenge. Please use queries to answer the following questions. Paste your queries along with your final numerical answers below.
@@ -33,21 +17,3 @@ For this question you’ll need to use SQL. Follow this link (https://www.w3scho
 1. How many orders were shipped by Speedy Express in total?\
 2. What is the last name of the employee with the most orders?\
 3. What product was ordered the most by customers in Germany?\
-
-## Answers: 
-
-1. How many orders were shipped by Speedy Express in total? 54
-
-2. What is the last name of the employee with the most orders?
-
-   Employee: Peacock\
-   Most orders: 40
-
-3. What product was ordered the most by customers in Germany? <br/>
-
-   Product:       Camembert Pierrot\
-   Quantity:      40\
-   Orders:        300\
-   TotalOrdered:  12000
-   
-VIEW CODE HERE: https://github.com/elsantonato/Data-Science-Challenge/blob/master/Data-Science-Intern-Challenge-Question-2.sql
